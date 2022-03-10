@@ -1,0 +1,54 @@
+:root{
+    --color-fondo-nav: rgb(218,172,0);
+    --tipo-de-letra: 'Poppins', verdana;
+    --color-en-amarillo: white;
+    --fondo-articulos-impares: rgb(252,195,2);
+}
+
+
+
+*, *::before, *::after{
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+border: px solid black;
+
+}
+
+header{
+    background-color: var(--color-fondo-nav);
+}
+
+nav{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 5em;
+    flex-wrap: wrap;
+}
+
+.logo-nav{
+    width: 4rem;
+    height: 4rem;
+}
+
+ul{
+    display: inline-flex;
+    font-family: var(--tipo-de-letra);
+    color: var(--color-en-amarillo);
+    margin: auto 8em;
+    /* flex-wrap: wrap; */
+}
+
+
+.menu-nav{
+    color: var(--color-en-amarillo);
+    margin: 3em;
+}
+
+.nombre-empresa{
+    color: var(--color-en-amarillo);
+    font-family: var(--tipo-de-letra);
+    margin: auto .5em;
+}
+
