@@ -5,26 +5,22 @@
     --fondo-articulos-impares: rgb(252,195,2);
 }
 
-
-
-*, *::before, *::after{
-box-sizing: border-box;
-text-decoration: none;
-list-style: none;
-border: px solid black;
-
-}
-
+/* estilos para la barra de navegacion */
 header{
     background-color: var(--color-fondo-nav);
+    min-width: 320px;
 }
 
 nav{
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
+    height: 6rem;
+    justify-content: space-around;
     align-items: center;
-    margin: auto 5em;
     flex-wrap: wrap;
+}
+
+.contenedor-logo{
+    display: flex;
 }
 
 .logo-nav{
@@ -33,22 +29,26 @@ nav{
 }
 
 ul{
-    display: inline-flex;
+    display:flex;
+    padding: 0;
+    list-style: none;
     font-family: var(--tipo-de-letra);
-    color: var(--color-en-amarillo);
-    margin: auto 8em;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
-
 
 .menu-nav{
     color: var(--color-en-amarillo);
     margin: 3em;
+    text-decoration: none;
+    font-size: 1.5em;
 }
 
 .nombre-empresa{
     color: var(--color-en-amarillo);
     font-family: var(--tipo-de-letra);
     margin: auto .5em;
+    font-size: 1.5em;
 }
+
+
 
