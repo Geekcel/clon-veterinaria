@@ -1,9 +1,15 @@
 :root{
     --color-fondo-nav: rgb(218,172,0);
-    --tipo-de-letra: 'Poppins', verdana;
+    --tipo-de-letra: 'Poppins-Medium', verdana;
     --color-en-amarillo: white;
     --fondo-articulos-impares: rgb(252,195,2);
     --color-boton-principal:rgb(0,190,201);
+    --titulos-principales: 
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url(fonts/Poppins-Medium.ttf);
 }
 
 /* estilos para la barra de navegacion */
@@ -29,6 +35,13 @@ nav{
     height: 4rem;
 }
 
+.nombre-empresa{
+    color: var(--color-en-amarillo);
+    font-family: var(--tipo-de-letra);
+    margin: auto .5em;
+    font-size: 1.5em;
+}
+
 ul{
     display:flex;
     padding: 0;
@@ -44,20 +57,17 @@ ul{
     font-size: 1.5em;
 }
 
-.nombre-empresa{
-    color: var(--color-en-amarillo);
-    font-family: var(--tipo-de-letra);
-    margin: auto .5em;
-    font-size: 1.5em;
-}
 
 /* estilos primera seccion */
 .articulo-impar{
-    background-color: var(--fondo-articulos-impares)
+    background-color: var(--fondo-articulos-impares);
+    height: 100vh;
 }
 
 .contenedor-seccion{
     display: flex;
+    align-items: center;
+    padding: 5em;
 }
 
 .contenido-izq{
@@ -67,6 +77,18 @@ ul{
     padding: 2em;
     color: var(--color-en-amarillo);
     font-family: var(--tipo-de-letra);
+}
+
+.contenido-der{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    width: 100rem;
+}
+
+.contenido-der>img{
+    width: 68%;
+    transform: scaleX(-1);
 }
 
 .botones{
@@ -93,15 +115,4 @@ ul{
     background-color: transparent;
     width: 15rem;
     height: 5rem;
-}
-
-.contenido-der{
-    display: flex;
-    padding: 2em;
-    width: 100rem;
-}
-
-.contenido-der>img{
-    width: 75%;
-    border-radius: 20rem;
 }
