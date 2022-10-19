@@ -3,6 +3,7 @@
     --tipo-de-letra: 'Poppins', verdana;
     --color-en-amarillo: white;
     --fondo-articulos-impares: rgb(252,195,2);
+    --color-boton-principal:rgb(0,190,201);
 }
 
 /* estilos para la barra de navegacion */
@@ -50,5 +51,57 @@ ul{
     font-size: 1.5em;
 }
 
+/* estilos primera seccion */
+.articulo-impar{
+    background-color: var(--fondo-articulos-impares)
+}
 
+.contenedor-seccion{
+    display: flex;
+}
 
+.contenido-izq{
+    /* display: flex; */
+    /* flex-flow: column wrap; */
+    font-size: 1.5rem;
+    padding: 2em;
+    color: var(--color-en-amarillo);
+    font-family: var(--tipo-de-letra);
+}
+
+.botones{
+    display: inline-flex;
+    padding: .5em 0;
+}
+
+.botones>button{
+    border-radius: .5rem;
+    padding: .5em;
+    color: var(--color-en-amarillo);
+}
+
+.boton-primario{
+    border: 0;
+    background: var(--color-boton-principal);
+    width: 15rem;
+    height: 5rem;
+    margin-right: 2rem;
+}
+
+.boton-secundario{
+    border: 4px solid white;
+    background-color: transparent;
+    width: 15rem;
+    height: 5rem;
+}
+
+.contenido-der{
+    display: flex;
+    padding: 2em;
+    width: 100rem;
+}
+
+.contenido-der>img{
+    width: 75%;
+    border-radius: 20rem;
+}
