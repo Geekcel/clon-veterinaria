@@ -2,6 +2,7 @@
     --color-fondo-nav: rgb(218,172,0);
     --tipo-de-letra: 'Poppins-Medium', verdana;
     --color-en-amarillo: white;
+    --color-en-blanco: black;
     --fondo-articulos-impares: rgb(252,195,2);
     --color-boton-principal:rgb(0,190,201);
     --titulos-principales: 
@@ -115,4 +116,18 @@ ul{
     background-color: transparent;
     width: 15rem;
     height: 5rem;
+}
+
+/* estilos segundo articulo*/
+.articulo-par{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contenido-izq-par{
+    color: var(--color-en-blanco);
+    font-size: 1.5rem;
+    padding: 2em;
+    font-family: var(--tipo-de-letra);
 }
