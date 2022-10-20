@@ -7,6 +7,9 @@
     --color-boton-principal:rgb(0,190,201);
     --titulos-principales: 
 }
+html {
+    overflow-x: hidden;
+}
 
 @font-face {
     font-family: 'Poppins-Medium';
