@@ -75,8 +75,6 @@ ul{
 }
 
 .contenido-izq{
-    /* display: flex; */
-    /* flex-flow: column wrap; */
     font-size: 1.5rem;
     padding: 2em;
     color: var(--color-en-amarillo);
@@ -162,4 +160,51 @@ ul{
     color: var(--color-en-amarillo);
     padding: 8px;
     border-radius: .5em;
+}
+/* estilos tercer articulo */
+.galeria{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2em;
+    color: var(--color-en-amarillo);
+    font-family: var(--tipo-de-letra);
+}
+
+.galeria > h1 {
+    margin: auto;
+}
+
+.galeria > p {
+    margin-bottom: 3em;
+    width: 700px;
+}
+
+.imagenes{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.img1 , .img2 , .img3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 30%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.imagenes * img{
+    outline: 8px solid var(--color-en-amarillo);
+}
+
+.imagenes * h2{
+    margin-top: 1.4em;
+}
+
+.imagenes * p{
+    margin-top: -10px;
 }
