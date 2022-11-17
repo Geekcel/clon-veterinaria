@@ -139,7 +139,7 @@ ul{
     align-items: flex-end;
 }
 
-.contenido-der-impar>iframe{
+iframe{
     padding: 34px;
 }
 
@@ -149,7 +149,6 @@ ul{
     background-color: var(--fondo-articulos-impares);
     position:absolute;
     z-index: -1;
-    
 }
 
 .boton-primario-impar{
@@ -207,4 +206,26 @@ ul{
 
 .imagenes * p{
     margin-top: -10px;
+}
+/* estilos cuarto articulo */
+.contenedor-seccion-cuarta{
+    display: flex;
+    align-items: center;
+    padding: 5em;
+    flex-flow: row-reverse;
+}
+
+.contenido-der-par{
+    color: var(--color-en-blanco);
+    font-size: 1.5rem;
+    padding: 2em;
+    font-family: var(--tipo-de-letra);
+    width: 880px;
+    text-align: right;
+}
+
+.contenido-der-impar-4{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
