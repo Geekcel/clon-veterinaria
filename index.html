@@ -6,75 +6,100 @@
     <link rel="shortcut icon" href="img/Veterinaria.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuente Poppins meeium -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
     <title>Veterinaria</title>
 </head>
 <body>
     <!-- Barre de navegacion principal -->
     <header>
         <nav>
-            <img src="img/Veterinaria.png" alt="logo de la vetrerinaria">
-            <p>Veterinaria yopal</p>
+            <div class="contenedor-logo">
+                <img class="logo-nav" src="img/Veterinaria.png" alt="logo de la vetrerinaria">
+                <p class="nombre-empresa">Veterinaria yopal</p>
+            </div>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contactenos</a></li>
+                <li><a class="menu-nav" href="#">Inicio</a></li>
+                <li><a class="menu-nav" href="#">Nosotros</a></li>
+                <li><a class="menu-nav" href="#">Servicios</a></li>
+                <li><a class="menu-nav" href="#">Contactenos</a></li>
             </ul>
         </nav>
     </header>
 <!-- Contenido principal -->
     <main>
         <!-- Primera seccion -->
-        <article>
-            <section>
-                <h1>Titulo principal para anunciar</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti corporis temporibus quis doloremque a id officia. Ad in quam impedit enim nulla illo necessitatibus nisi consequatur, temporibus harum odit tenetur!</p>
-                <button>Contactenos</button>
-                <button>Solicita un servicio</button>
-                <img src="https://picsum.photos/id/1025/600/400" alt="imagen de perro pug con cobija">
+        <article class="articulo-impar">
+            <section class="contenedor-seccion">
+                <div class="contenido-izq">
+                    <h1>La mejor eleccion que hara sentir segura a tu mascota</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti corporis temporibus quis doloremque a id officia. Ad in quam impedit enim nulla illo necessitatibus nisi consequatur, temporibus harum odit tenetur!</p>
+                    <div class="botones">
+                        <button class="boton-primario">Contactenos</button>
+                        <button class="boton-secundario">Solicita un servicio</button>
+                    </div>
+                </div>
+                <div class="contenido-der">
+                    <img src="img/Perro.webp" alt="imagen de perro pug con cobija">
+                </div>
             </section>
         </article>
         <!-- segunda seccion -->
-        <article>
-            <section>
-                <h1>Es una veterinaria que ama a los animales</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae possimus cupiditate temporibus quidem architecto consectetur nobis magni delectus aliquid accusantium deserunt adipisci dignissimos, odit sapiente repudiandae quod perferendis fugiat.</p>
-                <button>Solicita un servicio</button>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ySgCU7z1E_Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <article class="articulo-par">
+            <section class="contenedor-seccion">
+                <div class="contenido-izq-par">
+                    <h1>Es una veterinaria que ama a los animales</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae possimus cupiditate temporibus quidem architecto consectetur nobis magni delectus aliquid accusantium deserunt adipisci dignissimos, odit sapiente repudiandae quod perferendis fugiat.</p>
+                    <div>
+                        <button class="botones boton-primario-impar">Solicita un servicio</button>
+                    </div>
+                </div>
+                <div class="contenido-der-impar">
+                    <iframe width="550" height="550" src="https://www.youtube.com/embed/ySgCU7z1E_Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="cuadrado-decorativo"></div>
+                </div>  
             </section>
         </article>
         <!-- Tercera seccion -->
-        <article>
-            <section>
+        <article class="articulo-impar">
+            <section class="galeria contenedor-seccion">
                 <h1>Galeria</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae amet, quia excepturi tenetur veniam maxime molestiae, voluptatum ipsa fuga repellendus ut? Error molestiae amet asperiores sit maxime, dolores ratione eos!</p>
-                <div class="galeria">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum sequi libero ad?</p>
+                <div class="imagenes">
                     <div class="img1">
-                        <img src="https://picsum.photos/id/237/600/400" alt="perro negro">
-                        <h2>veterinarios</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet reiciendis quibusdam odit asperiores sunt provident ea sed laboriosam necessitatibus sapiente, voluptate sint enim autem excepturi ab ut soluta cum molestiae?</p>
+                        <img src="img/medica-perro.webp" alt="veterinaria-acariciando-perro">
+                        <h2>Veterinarios</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, delectus deserunt.</p>
                     </div>
                     <div class="img2">
-                        <img src="https://picsum.photos/id/1020/600/400" alt="oso en la montaña">
+                        <img src="img/perro-mirando-mano.webp" alt="perro-enfermo-mirando-mano-veterinaria">
                         <h2>Vacunacion</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet reiciendis quibusdam odit asperiores sunt provident ea sed laboriosam necessitatibus sapiente, voluptate sint enim autem excepturi ab ut soluta cum molestiae?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, delectus deserunt.</p>
                     </div>
                     <div class="img3">
-                        <img src="https://picsum.photos/id/550/600/400" alt="mujer viendo el horizonte">
-                        <h2>plan dental</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet reiciendis quibusdam odit asperiores sunt provident ea sed laboriosam necessitatibus sapiente, voluptate sint enim autem excepturi ab ut soluta cum molestiae?</p>
+                        <img src="img/medica-chequeando-perro.webp" alt="veterinaria-chequeano-perro">
+                        <h2>Plan Dental</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, delectus deserunt.</p>
                     </div>
                 </div>
             </section>
         </article>
         <!-- cuerta seccion con textos alineados a la izquierda -->
-        <article>
-            <section>
-                <h1>Es una veterinaria que ama a los animales</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae possimus cupiditate temporibus quidem architecto consectetur nobis magni delectus aliquid accusantium deserunt adipisci dignissimos, odit sapiente repudiandae quod perferendis fugiat.</p>
-                <button>Solicita un servicio</button>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ySgCU7z1E_Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <article class="articulo-par">
+            <section class="contenedor-seccion-cuarta">
+                <div class="contenido-der-par">
+                    <h1>Es una veterinaria que ama a los animales</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium veritatis illum, sit eius officia est?</p>
+                    <button class="botones boton boton-primario-impar">Solicita un servicio</button>
+                </div>
+                <div class="contenido-der-impar-4">
+                    <iframe width="550" height="550" src="https://www.youtube.com/embed/ySgCU7z1E_Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="cuadrado-decorativo"></div>
+                </div>
             </section>
         </article>
         <!-- quinta seccion -->

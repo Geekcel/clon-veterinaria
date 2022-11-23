@@ -1,11 +1,231 @@
 :root{
     --color-fondo-nav: rgb(218,172,0);
+    --tipo-de-letra: 'Poppins-Medium', verdana;
+    --color-en-amarillo: white;
+    --color-en-blanco: black;
+    --fondo-articulos-impares: rgb(252,195,2);
+    --color-boton-principal:rgb(0,190,201);
+    --titulos-principales: 
+}
+html {
+    overflow-x: hidden;
 }
 
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url(fonts/Poppins-Medium.ttf);
+}
+
+/* estilos para la barra de navegacion */
 header{
-    background-color: var(--color-fondo-nav)
+    background-color: var(--color-fondo-nav);
+    min-width: 320px;
 }
 
-*{
+nav{
+    display: flex;
+    height: 6rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-logo{
+    display: flex;
+}
+
+.logo-nav{
+    width: 4rem;
+    height: 4rem;
+}
+
+.nombre-empresa{
+    color: var(--color-en-amarillo);
+    font-family: var(--tipo-de-letra);
+    margin: auto .5em;
+    font-size: 1.5em;
+}
+
+ul{
+    display:flex;
+    padding: 0;
+    list-style: none;
+    font-family: var(--tipo-de-letra);
+    flex-wrap: wrap;
+}
+
+.menu-nav{
+    color: var(--color-en-amarillo);
+    margin: 3em;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+
+/* estilos primera seccion */
+.articulo-impar{
+    background-color: var(--fondo-articulos-impares);
+    height: 100vh;
+}
+
+.contenedor-seccion{
+    display: flex;
+    align-items: center;
+    padding: 5em;
+}
+
+.contenido-izq{
+    font-size: 1.5rem;
+    padding: 2em;
+    color: var(--color-en-amarillo);
+    font-family: var(--tipo-de-letra);
+}
+
+.contenido-der{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    width: 100rem;
+}
+
+.contenido-der>img{
+    width: 68%;
+    transform: scaleX(-1);
+}
+
+.botones{
+    display: inline-flex;
+    padding: .5em 0;
+    align-items: center;
+}
+
+.botones>button{
+    border-radius: .5rem;
+    padding: .5em;
+    color: var(--color-en-amarillo);
+}
+
+.boton-primario{
+    border: 0;
+    background: var(--color-boton-principal);
+    width: 15rem;
+    height: 5rem;
+    margin-right: 2rem;
+}
+
+.boton-secundario{
+    border: 4px solid white;
+    background-color: transparent;
+    width: 15rem;
+    height: 5rem;
+}
+
+/* estilos segundo articulo*/
+.articulo-par{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contenido-izq-par{
+    color: var(--color-en-blanco);
+    font-size: 1.5rem;
+    padding: 2em;
+    font-family: var(--tipo-de-letra);
+}
+
+.contenido-der-impar{
+    display: flex;
+    align-items: flex-end;
+}
+
+iframe{
+    padding: 34px;
+}
+
+.cuadrado-decorativo{
+    width: 14em;
+    height: 12em;
+    background-color: var(--fondo-articulos-impares);
+    position:absolute;
+    z-index: -1;
+}
+
+.boton-primario-impar{
+    border: 0;
+    background: var(--fondo-articulos-impares);
+    width: 15rem;
+    height: 5rem;
+    color: var(--color-en-amarillo);
+    padding: 8px;
+    border-radius: .5em;
+}
+/* estilos tercer articulo */
+.galeria{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2em;
+    color: var(--color-en-amarillo);
+    font-family: var(--tipo-de-letra);
+}
+
+.galeria > h1 {
     margin: auto;
+}
+
+.galeria > p {
+    margin-bottom: 3em;
+    width: 700px;
+}
+
+.imagenes{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.img1 , .img2 , .img3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 30%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.imagenes * img{
+    outline: 8px solid var(--color-en-amarillo);
+}
+
+.imagenes * h2{
+    margin-top: 1.4em;
+}
+
+.imagenes * p{
+    margin-top: -10px;
+}
+/* estilos cuarto articulo */
+.contenedor-seccion-cuarta{
+    display: flex;
+    align-items: center;
+    padding: 5em;
+    flex-flow: row-reverse;
+}
+
+.contenido-der-par{
+    color: var(--color-en-blanco);
+    font-size: 1.5rem;
+    padding: 2em;
+    font-family: var(--tipo-de-letra);
+    width: 880px;
+    text-align: right;
+}
+
+.contenido-der-impar-4{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
