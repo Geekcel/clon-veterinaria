@@ -190,10 +190,8 @@ iframe{
     display: flex;
     align-items: center;
     flex-direction: column;
-    
     width: 30%;
     text-align: center;
-    flex-wrap: wrap;
 }
 
 .imagenes * img{
@@ -228,4 +226,35 @@ iframe{
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+}
+/* estilos quinto articulo */
+.imagenes-precios{
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+}
+
+.imagenes-precios * img{
+    outline: 8px solid var(--color-en-amarillo);
+}
+
+.precios{
+    display: flex;
+    gap: 0.9em;
+    font-size: 1.5em;
+    align-items: center;
+}
+
+.precios  :first-child{
+    text-decoration: line-through;
+    font-size: 0.8em;
+}
+
+.boton-comprar{
+    border: none;
+    background-color: var(--color-boton-principal);
+    color: var(--color-en-amarillo);
+    width: 14rem;
+    height: 4rem;
+    border-radius: 2em;
 }
