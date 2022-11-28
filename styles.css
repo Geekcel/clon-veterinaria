@@ -194,7 +194,7 @@ iframe{
     text-align: center;
 }
 
-.imagenes * img{
+.fotos {
     outline: 8px solid var(--color-en-amarillo);
 }
 
@@ -234,10 +234,6 @@ iframe{
     justify-content: center;
 }
 
-.imagenes-precios * img{
-    outline: 8px solid var(--color-en-amarillo);
-}
-
 .precios{
     display: flex;
     gap: 0.9em;
@@ -257,4 +253,36 @@ iframe{
     width: 14rem;
     height: 4rem;
     border-radius: 2em;
+}
+/* estilos sexto articulo */
+.equipo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2em;
+    color: var(--color-en-blanco);
+    font-family: var(--tipo-de-letra);
+}
+
+.redes-sociales{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+.fondo-icono{
+width: 50px;
+height: 50px;
+background-color: var(--color-fondo-nav);
+border-radius: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.icono{
+    width: 34px;
 }
