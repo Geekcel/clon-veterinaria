@@ -5,7 +5,7 @@
     --color-en-blanco: black;
     --fondo-articulos-impares: rgb(252,195,2);
     --color-boton-principal:rgb(0,190,201);
-    --titulos-principales: 
+    --color-footer: #343434
 }
 html {
     overflow-x: hidden;
@@ -65,7 +65,8 @@ ul{
 /* estilos primera seccion */
 .articulo-impar{
     background-color: var(--fondo-articulos-impares);
-    height: 100vh;
+    height: auto;
+    padding: 8rem;
 }
 
 .contenedor-seccion{
@@ -124,7 +125,8 @@ ul{
 .articulo-par{
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: auto;
+    padding: 8rem;
 }
 
 .contenido-izq-par{
@@ -324,4 +326,55 @@ align-items: center;
 
 .contenedor-items > h2{
     margin-top: -0.5em;
+}
+/* estilos octava seccion */
+.contenedor-seccion-post{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    align-items: center;
+    color: var(--color-en-blanco);
+    font-family: var(--tipo-de-letra);
+}
+
+.contenedor-seccion-post > h1{
+font-size: 3em;
+}
+
+.contenedor-seccion-post > p{
+    font-size: 1.5em;
+    max-width: 50rem;
+    text-align: center;
+    margin-top: -0.5em;
+}
+
+.contenedor-post{
+    display: flex;
+    gap: 28px;
+    padding: 1em;
+}
+
+.post{
+    width: 24em;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.text-cards{
+    padding: 2.2em;
+}
+
+.post > img {
+    width: 100%;
+}
+
+.fechas{
+    color: var(--color-boton-principal);
+    font-size: 1.1em;
+}
+
+.text-cards > a{
+    text-decoration: none;
+    color: var(--color-boton-principal);
+    font-size: 1.5em;
 }
